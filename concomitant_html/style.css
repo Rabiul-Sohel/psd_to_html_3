@@ -1,0 +1,294 @@
+/* ===================
+Common Css
+=========================== */
+
+body{
+   color: #888888;
+   font-family: Georgia, sans-serif;
+   font-size: 16px;
+   line-height: 1.5em;
+   margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.align_left{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.align_right{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.align_center{
+   display: block;
+   margin: 0 auto 15px;
+}
+
+
+
+/* ===================
+Header Area Css
+=========================== */
+#header_area{
+    width: 100%;
+    clear: both;
+    border-top: 8px solid #81B300;
+}
+.inner_header{
+    width: 100%;
+    overflow: hidden;
+}
+.logo_area{
+    background: #FFFFFF;
+    /* max-width: 400px;
+    width: 40%; */
+    padding: 30px 0;
+    
+}
+.mini_area{
+    margin: 0;
+    padding: 0;
+}
+.social_menu{
+    background: #81B300;
+    padding: 3px 0;
+    /* width: 280px;
+    height: 50px; */
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+.social_menu ul{
+   list-style: none;
+   margin: 0;
+   padding: 5px 0;
+}
+.social_menu ul li{
+    display: inline-block;
+    margin:0 5px 0 10px;
+  
+}
+.social_menu ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_menu ul li a i{
+    color: #FFFFFF;
+    background: #1F1F1F;
+    border-radius: 50%;
+    display: block;
+    width: 35px;
+    height: 25px;
+    padding-top: 8px;
+    text-align: center;
+    transition: 0.35s;
+}
+.social_menu ul li a:hover i{
+    background: #81B300;
+    
+}
+.social_menu ul li a:hover i.fa-linkedin-in{
+    background: #2B67B3;   
+}
+.social_menu ul li a:hover i.fa-twitter{
+    background: #219AEE;   
+}
+.social_menu ul li a:hover i.fa-pinterest-p{
+    background: #DC0422;   
+}
+.social_menu ul li a:hover i.fa-google-plus-g{
+    background: #D54C3F;   
+}
+.social_menu ul li a:hover i.fa-rss{
+    background: #F19637;   
+}
+
+.mini_menu{
+    padding-top: 30px;
+    float: right;
+
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.mini_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    
+}
+.mini_menu ul li::after{
+    background: #81B300;
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -10px;
+    height: 12px;
+    width: 1px; 
+}
+.mini_menu ul li:first-child:after{
+    display: none;
+}
+.mini_menu ul li a{
+    display: block;
+    color: #81B300;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.35s;
+}
+.mini_menu ul li a:hover{
+    color: #2f3d0a;
+}
+
+
+
+
+/* ===================
+Menu Area Css
+=========================== */
+
+#menu_area{
+    width: 100%;
+    height: 70px;
+    background: #81B300;
+    clear: both;
+}
+.inner_menu{
+    /* height; */
+}
+.main_menu{
+    max-width: 700px;
+    width: 70%;
+    position: relative;
+}
+.main_menu ul{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+}
+.main_menu ul li{
+    display: inline-block;
+    text-align: left;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+.main_menu ul li a{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+}
+.main_menu ul li:hover a{
+    color: #1F1F1F;
+}
+.main_menu ul li a:hover{
+    color: #000;
+}
+.main_menu ul li:hover ul li a{
+    color: #fff;
+}
+
+
+/* ========================
+    Dropdown Style 
+===========================*/
+.main_menu ul ul{
+    width: 180px;
+    background: #81B300;
+    text-align: center;
+    top: 25px;
+    padding: 0;
+    margin: 0;
+    right: -99999px;
+}
+.main_menu ul li:hover ul{
+    right: auto;
+}
+.main_menu ul ul li{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main_menu ul ul li:hover a{
+    background: #2f3d0a;  
+}
+.main_menu ul ul li:hover ul li a{
+    background: #81B300;  
+}
+.main_menu ul ul li:hover ul{
+    left: 180px;  
+}
+.main_menu ul ul li ul li a:hover{
+    background: #2f3d0a;  
+}
+.main_menu ul ul li a{
+    background: #81B300;
+    padding: 5px 0;
+ }
+.main_menu ul ul li a:hover{
+    background: #2f3d0a;  
+}
+.main_menu ul ul ul{
+    position: absolute;
+    background: #2f3d0a;
+    left: -9999px;
+    width: 180px;
+    top: 0;
+
+}
+
+
+
+/* ==========================
+    Search Area Css
+    =========================== */
+.search_area{
+    max-width: 300px;
+    width: 30%;
+    text-align: right;
+    margin-top: 4px;
+}
+.search_area input{
+    height: 32px;
+}
+.search_area input[type="text"]{
+    width: 66%;
+    margin: 0;
+    padding: 0 2%;
+    float: left;
+    border: 1px solid #DDDDDD;
+}
+.search_area input[type="button"]{
+    width: 29%;
+    /* margin-left: ; */
+    /* padding-bottom: 2px; */
+    border: 1px solid #DDDDDD;
+    color: #81B300;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: Georgia;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 34px;
+    cursor: pointer;
+    transition: .3s;
+}
+.search_area input[type="button"]:hover{
+    color:#000;
+  
+}
